@@ -204,3 +204,94 @@ body {
 .caja-footer small {
   font-size: 9px;
 }
+
+/* ==============================
+   RESPONSIVE - TABLET
+============================== */
+
+@media (max-width: 800px) {
+
+  .contenedor {
+    width: 94%;
+  }
+
+  .contenido-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .caja-aside {
+    width: 100%;
+  }
+
+  .caja-header h1 {
+    font-size: 27px;
+  }
+
+}
+
+
+/* ==============================
+   RESPONSIVE - CELULAR
+============================== */
+
+@media (max-width: 600px) {
+
+  .contenedor {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .caja-header {
+    padding: 25px 15px;
+  }
+
+  .caja-header h1 {
+    font-size: 23px;
+  }
+
+  .caja-header p {
+    font-size: 11px;
+  }
+
+  .caja-nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .enlaces {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .enlaces a {
+    font-size: 10px;
+  }
+
+  .contenido-principal {
+    padding: 10px;
+  }
+
+  .caja-section {
+    padding: 15px;
+  }
+
+  .articulos {
+    grid-template-columns: 1fr;
+  }
+
+  .caja-article {
+    min-height: auto;
+  }
+
+  .caja-aside {
+    padding: 15px;
+  }
+
+  .caja-footer {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+}
