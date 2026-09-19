@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo responsive de los principales componentes semánticos de HTML.">
+  <title>Componentes semánticos | Responsive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <header class="caja caja-header">
+      <span class="etiqueta">01 / header</span>
+      <h1>Componentes semánticos</h1>
+      <p>Una estructura de cajas que muestra cómo se organiza una página responsive.</p>
+    </header>
+
+    <nav class="caja caja-nav" aria-label="Navegación principal">
+      <span class="nombre-componente">nav</span>
+      <div class="enlaces">
+        <a href="#contenido">Contenido</a>
+        <a href="#articulos">Artículos</a>
+        <a href="#informacion">Información</a>
+      </div>
+    </nav>
+
+    <main id="contenido" class="contenido-principal">
+      <span class="etiqueta etiqueta-main">02 / main</span>
+      <section class="caja caja-section" aria-labelledby="titulo-section">
+        <span class="etiqueta">03 / section</span>
+        <h2 id="titulo-section">Contenido principal</h2>
+        <p>Una <strong>section</strong> agrupa contenido relacionado dentro de una página.</p>
+
+        <div id="articulos" class="articulos">
+          <article class="caja caja-article">
+            <span class="nombre-componente">article</span>
+            <h3>Contenido independiente</h3>
+            <p>Este bloque puede leerse por separado, como una noticia o una publicación.</p>
+          </article>
+          <article class="caja caja-article">
+            <span class="nombre-componente">article</span>
+            <h3>Diseño ordenado</h3>
+            <p>Las cajas se reorganizan para conservar la lectura en cualquier pantalla.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside id="informacion" class="caja caja-aside">
+        <span class="etiqueta">04 / aside</span>
+        <h2>Información adicional</h2>
+        <p>El <strong>aside</strong> contiene datos complementarios al contenido principal.</p>
+        <ul>
+          <li>Escritorio: dos columnas</li>
+          <li>Tablet: bloques más compactos</li>
+          <li>Móvil: una sola columna</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="caja caja-footer">
+      <span class="nombre-componente">footer</span>
+      <p>HTML semántico + CSS responsive</p>
+      <small>Redimensiona la ventana para observar los cambios.</small>
+    </footer>
+  </div>
+</body>
+</html>
